@@ -1,0 +1,98 @@
+.selektera-control {
+  position: relative;
+}
+.selektera-input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.selektera-input > input {
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  max-height: none;
+  max-width: 100%;
+  text-indent: 0;
+  border: 0 none;
+  background: none;
+  line-height: inherit;
+  -webkit-user-select: auto;
+}
+.selektera-input > input:focus {
+  outline: none;
+}
+.selektera-input:after {
+  content: "";
+  display: block;
+  clear: left;
+}
+.selektera-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  list-style-type: none;
+  padding: 3px 0 0 7px;
+  margin-top: -1px;
+  display: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.selektera-dropdown.open {
+  display: block;
+}
+.selektera-dropdown .selektera-option {
+  cursor: pointer;
+}
+.selektera-group > ul {
+  list-style-type: none;
+  padding: 0 0 0 14px;
+}
+.selektera-control {
+  font: normal 12px/1.6 "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  color: #2c3e50;
+}
+.selektera-control .selektera-input {
+  border: 1px solid #bdc3c7;
+  background-color: #ffffff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.selektera-control .selektera-input > input {
+  padding: 3px 7px;
+}
+.selektera-control .selektera-input.dropdown-open {
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.selektera-control .selektera-input:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 0;
+  height: 0;
+  margin-top: -1px;
+  border-color: #2c3e50 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+}
+.selektera-control .selektera-dropdown {
+  border: 1px solid #bdc3c7;
+  border-top: 1px solid #ecf0f1;
+  -webkit-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+  background-color: #ffffff;
+}
+.selektera-control .selektera-option {
+  padding: 3px 3px;
+}
+.selektera-control .selektera-option:hover {
+  background-color: #ecf0f1;
+}
+.selektera-control .selektera-option.selected {
+  background-color: #3498db;
+  color: #ffffff;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selektera</title>
+	<link rel="stylesheet" href="lib/selektera.css">
+</head>
+<body>
+<!-- 	<div class="selektera-control">
+ 		<div class="selektera-input">
+			<input name="selektera" placeholder="Selektera" disabled />
+		</div>
+		<ul class="selektera-dropdown open">
+			<li class="selektera-group">Group 1
+				<ul>
+					<li class="selektera-option" data-value="1">Option 1</li>
+					<li class="selektera-option selected" data-value="2">Option 2</li>
+					<li class="selektera-option" data-value="3">Option 3</li>
+				</ul>
+			</li>
+			<li class="selektera-group">Group 2
+				<ul>
+					<li class="selektera-option" data-value="4">Option 4</li>
+					<li class="selektera-option" data-value="5">Option 5</li>
+					<li class="selektera-option" data-value="6">Option 6</li>
+				</ul>
+			</li>
+		</ul>
+	</div> -->
+
+	<select name="selektera" id="selektera">
+		<optgroup label="Group 1">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</optgroup>
+		<optgroup label="Group 2">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</optgroup>
+		<optgroup label="Group 3">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<option value="3">Option 3</option>
+		</optgroup>
+	</select>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/selektera.js"></script>
+	<script>
+		$("#selektera").selektera();
+	</script>
+</body>
+</html>

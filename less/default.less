@@ -1,0 +1,85 @@
+@import "selektera";
+
+// Colors
+@wet-asphalt: #34495E;
+@midnight-blue: #2c3e50;
+
+@peter-river: #3498db;
+
+@clouds: #ECF0F1;
+@silver: #BDC3C7;
+@concrete: #95A5A6;
+@asbestos: #7F8C8D;
+
+@selektera-font-color: @midnight-blue;
+
+@selektera-input-border-color: @silver;
+@selektera-input-background-color: #FFFFFF;
+@selektera-input-arrow-color: @midnight-blue;
+
+@selektera-dropdown-border-color: @silver;
+@selektera-dropdown-top-border-color: @clouds;
+@selektera-dropdown-background-color: #FFFFFF;
+
+@selektera-option-hover-background-color: @clouds;
+@selektera-option-selected-background-color: @peter-river;
+@selektera-option-selected-font-color: #FFF;
+
+.selektera-control {
+	font: normal 12px/1.6 "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+	color: @selektera-font-color;
+}
+
+.selektera-control {
+	.selektera-input {
+		border: 1px solid @selektera-input-border-color;
+		background-color: @selektera-input-background-color;
+
+		.selektera-border-radius(3px);
+
+		> input {
+			padding: 3px 7px;
+		}
+
+		&.dropdown-open {
+			.selektera-border-radius(3px 3px 0 0);
+		}
+		
+		// Arrow
+		&:after {
+			content: "";
+
+			position: absolute;
+			top: 50%; right: 14px;
+
+			width: 0; height: 0;
+			margin-top: -1px;
+
+			border-color: @selektera-input-arrow-color transparent transparent transparent;
+			border-style: solid;
+			border-width: 5px 5px 0 5px;
+		}
+	}
+
+	.selektera-dropdown {
+		border: 1px solid @selektera-dropdown-border-color;
+		border-top: 1px solid @selektera-dropdown-top-border-color;
+
+		.selektera-border-radius(0 0 3px 3px);
+
+		background-color: @selektera-dropdown-background-color;
+	}
+
+	.selektera-option {
+		padding: 3px 3px;
+
+		&:hover {
+			background-color: @selektera-option-hover-background-color;
+		}
+
+		&.selected {
+			background-color: @selektera-option-selected-background-color;
+			color: @selektera-option-selected-font-color;
+		}
+	}
+}
